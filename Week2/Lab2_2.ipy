@@ -1,0 +1,14 @@
+Age = int(input("Your age : "))
+if Age < 5:
+    print("You're too young for movies! Enjoy with cartoons.")
+elif Age <= 12:
+    print("G-rated or PG-rated movies.")
+elif Age <= 17:
+    print("PG-13 or R-rated (with parental guidance).")
+else:
+    print("Any movies rating.")
+
+
+like = input("Do you like action movies? (yes/no): ").strip().lower()
+if (like == "yes" or like == "Yes") and Age >= 18:
+    print("You might enjoy the lasted action blockblaster")

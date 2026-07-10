@@ -1,0 +1,21 @@
+number = int(input("Your Number : "))
+
+
+if number > 0 :
+    result = "%d is Positive"%number
+    print(result)
+elif number < 0 :
+    result = "%d is Negative"%number
+    print(result)
+else :
+    result = "%d is Zero"%number
+    print(result)
+
+
+if number % 2 == 0:
+    result_1 = "is even"
+else:
+    result_1 = "is odd"
+print("%d %s"%(number,result_1))
+
+print("Your number %s and %s"%( result, result_1))
