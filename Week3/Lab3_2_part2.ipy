@@ -1,0 +1,16 @@
+Secret = 67
+count = 5
+while True : 
+    Guess = int(input("Enter your guess number : "))
+    count -=1
+    if count == 0:
+        break
+    if Secret == Guess:
+        print("Congratulations! You guessed it!")
+        break
+    elif Secret > Guess :
+        print("Too low! Try again.")
+        print()
+    else:
+        print("Too high! Try again.")
+        print()

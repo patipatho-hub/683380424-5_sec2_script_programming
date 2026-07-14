@@ -1,0 +1,3 @@
+number = int(input("Enter your nember : "))
+for i in range(1,13):
+    print(" %d * %d = %d "%(number,i,number * i))
