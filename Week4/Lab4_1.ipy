@@ -1,0 +1,60 @@
+# lab4_1.py - Student Management System (List Operations)
+
+print("--- Lab 4.1: Student Management System ---")
+
+# 1) เริ่มต้นด้วย list ว่างสำหรับเก็บชื่อนักศึกษา
+student_names = [] 
+
+while True:
+    print("\n--- Student Management System Menu ---")
+    print("1. Add Student ")
+    print("2. Find Student ")
+    print("3. Remove Student ")
+    print("4. Sort & Show Students ")
+    print("5. Count Students ")
+    print("6. Exit ")
+
+    choice = input("Select an option (1-6): ")
+
+    if choice == '1':
+        print("\n[1] Add Student")
+        name = input("Enter student name: ")
+        student_names.append(name)
+        print(f"Added '{name}' successfully.")
+
+    elif choice == '2':
+        print("\n[2] Find Student")
+        search_name = input("Enter a name to search for: ")
+        if search_name in student_names:
+            position = student_names.index(search_name)
+            print(f"Found '{search_name}' at index {position}")
+        else:
+            print(f"'{search_name}' not found in the list.")
+
+    elif choice == '3':
+        print("\n[3] Remove Student")
+        remove_name = input("Enter a name to remove: ")
+        if remove_name in student_names:
+            student_names.remove(remove_name)
+            print(f"'{remove_name}' has been removed.")
+        else:
+            print(f"'{remove_name}' not found, nothing removed.")
+
+    elif choice == '4':
+        print("\n[4] Sort & Show Students")
+        if student_names:
+            student_names.sort()
+            print(f"Sorted list: {student_names}")
+        else:
+            print("The list is currently empty.")
+
+    elif choice == '5':
+        print("\n[5] Count Students")
+        print(f"Total students: {len(student_names)}")
+
+    elif choice == '6':
+        print("\nExiting program. Goodbye!")
+        break  
+
+    else:
+        print("\nInvalid choice! Please select 1-6.")

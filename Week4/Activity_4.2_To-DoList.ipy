@@ -1,0 +1,39 @@
+todo_list = []
+
+print("=== To Do List ===\n")
+while True :
+    print("--- Menu ---")
+    print("1. Add Task ")
+    print("2. View Task ")
+    print("3. Remove Success Task ")
+    print("4. Exit ")
+    
+    choice = input("Enter Your choice : ")
+    
+    if choice == '1':
+        print("--- Add Task ---")
+        add_task = input("Add Your Task : ")
+        todo_list.append(add_task)
+        print(f"Current Task : \n {todo_list}")
+    
+    elif choice == '2' :
+        print("---View Task ---")
+        print(f"All Task : \n {todo_list}")
+        
+    elif choice == '3' :
+        print("--- Remove Success Task ---")
+        print(f"All Task : \n {todo_list}")
+        Re_suc = input("Enter Your Success Task : ")
+        if Re_suc in todo_list :
+            todo_list.remove(Re_suc)
+            print(f"{Re_suc} Remove Success ")
+        else :
+            print(f"{Re_suc} is not found")
+            
+    elif choice == '4' :
+        print("Thank for use To DO List")
+        break
+    
+    else :
+         print("\nInvalid choice! Please select 1-4.")
+    
