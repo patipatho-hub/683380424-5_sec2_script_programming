@@ -18,10 +18,12 @@ while True:
 
     if choice == '1':
         print("\n[1] Add Student")
-        name = input("Enter student name: ")
-        student_names.append(name)
-        print(f"Added '{name}' successfully.")
-
+        for i in range(3) :
+            name = input("Enter student name: ")
+            student_names.append(name)
+            print(f"Added '{name}' successfully.")
+        print(f"Current list: {student_names}")
+    
     elif choice == '2':
         print("\n[2] Find Student")
         search_name = input("Enter a name to search for: ")

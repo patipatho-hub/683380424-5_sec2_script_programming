@@ -1,0 +1,41 @@
+def check_sign(num):
+    """Determines if a number is Positive, Negative, or Zero."""
+    if num > 0:
+        return "Positive"
+    elif num < 0:
+        return "Negative"
+    else:
+        return "Zero"
+
+
+def check_parity(num):
+    """Determines if a number is even or odd."""
+    if num % 2 == 0:
+        return "is even"
+    else:
+        return "is odd"
+
+
+def classify_number(num):
+    """Coordinates checking the number and prints the results."""
+    sign = check_sign(num)
+    parity = check_parity(num)
+
+    # Print individual results
+    print(f"{num} is {sign}")
+    print(f"{num} {parity}")
+
+    # Print combined result
+    print(f"Your number is {sign} and {parity}")
+
+
+def main():
+    try:
+        user_num = int(input("Your Number : "))
+        classify_number(user_num)
+    except ValueError:
+        print("Invalid input! Please enter a valid integer.")
+
+
+if __name__ == "__main__":
+    main()

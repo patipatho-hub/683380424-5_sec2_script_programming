@@ -1,0 +1,19 @@
+# main_program.py
+
+import math
+import random
+import my_utils
+
+# 1. Test custom module functions
+my_utils.greet("Alice")
+
+print(f"Is 7 prime? {my_utils.is_prime(7)}")
+print(f"Is 10 prime? {my_utils.is_prime(10)}")
+
+# 2. Test standard library functions
+number = 16
+sqrt_val = math.sqrt(number)
+print(f"The square root of {number} is {sqrt_val}")
+
+rand_val = random.randint(1, 100)
+print(f"Random number between 1 and 100: {rand_val}")
