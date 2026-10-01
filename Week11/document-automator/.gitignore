@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# IDE / Editors
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Generated Output Documents
+documents/output_report.docx
+documents/merged_output.pdf
+documents/*_part_*.pdf
