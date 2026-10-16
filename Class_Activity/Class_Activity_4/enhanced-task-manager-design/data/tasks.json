@@ -54,12 +54,12 @@
     },
     {
         "id": 6,
-        "description": "work 1",
+        "description": "Coding",
         "completed": false,
         "tags": [
             "work"
         ],
         "_type": "DueDateTask",
-        "due_date": "2027-12-10"
+        "due_date": "2027-02-10"
     }
 ]
